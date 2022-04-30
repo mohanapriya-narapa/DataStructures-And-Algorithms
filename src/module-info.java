@@ -1,0 +1,2 @@
+module goal2022 {
+}
