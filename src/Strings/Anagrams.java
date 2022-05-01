@@ -3,7 +3,6 @@ package Strings;
 import java.util.*;
 
 public class Anagrams {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] str=new String[] {"eat","tea","tan","ate","nat","bat"};
