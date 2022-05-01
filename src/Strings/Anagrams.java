@@ -22,6 +22,7 @@ public class Anagrams {
 		}
 	
 		System.out.println(hs.values());
+		//print
 		
 
 	}
