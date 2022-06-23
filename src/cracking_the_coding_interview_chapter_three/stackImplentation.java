@@ -10,9 +10,16 @@ public class stackImplentation {
 			arr[i]=-1;
 		}
 		// TODO Auto-generated method stub
-push(5,0);push(8,1);push(9,2);
-pop(1);
+push(5,0);push(8,1);System.out.println(pop(1));push(9,2);push(10,2);System.out.println(peek(2));System.out.println(empty(1));
 
+	}
+
+	private static boolean empty(int stacknum) {
+		// TODO Auto-generated method stub
+		if(heads[stacknum]==-1)
+		{
+			return true;
+		}return false;
 	}
 
 	private static void push(int i, int stacknum) {
@@ -33,10 +40,15 @@ pop(1);
 		{
 			return -1;
 		}
-		heads[stacknum]++;
 		int offset=arrayOffset(stacknum)+heads[stacknum];
-		arr[offset]=i;
+		heads[stacknum]--;
+		return arr[offset];
 		
 	}
-
+	private static int peek(int stacknum) {
+		// TODO Auto-generated method stub
+		int offset=arrayOffset(stacknum)+heads[stacknum];
+		return arr[offset];
+		
+	}
 }
