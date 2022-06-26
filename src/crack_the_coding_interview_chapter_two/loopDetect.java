@@ -1,4 +1,4 @@
-package crack_the_cosind_interview_chapter_two;
+package crack_the_coding_interview_chapter_two;
 
 public class loopDetect {
 	private static class Node
