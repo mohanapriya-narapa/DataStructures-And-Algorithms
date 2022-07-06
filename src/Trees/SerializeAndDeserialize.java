@@ -1,5 +1,9 @@
 package Trees;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 import Trees.InvertBinaryTree.TreeNode;
 
 public class SerializeAndDeserialize {
@@ -27,7 +31,31 @@ public class SerializeAndDeserialize {
 		right.left=rightchild1;
 		right.right=rightchild2;
 		System.out.println(Serialize(root));
+		Deserilaize(Serialize(root));
+System.out.println(Serialize(Deserilaize(Serialize(root))));
 
+	}
+	private static TreeNode Deserilaize(String str) {
+		// TODO Auto-generated method stub
+		String[] arr=str.split(",");
+		List<String> nodes=new LinkedList<>(Arrays.asList(arr));
+		return deserialize(nodes);
+	}
+	private static TreeNode deserialize(List<String> nodes) {
+		if(nodes==null)
+			return null;
+		// TODO Auto-generated method stub
+		if(nodes.get(0).equals("#"))
+		{nodes.remove(0);
+			return null;
+		}
+		int val=Integer.valueOf(nodes.get(0));
+		nodes.remove(0);
+		TreeNode root=new TreeNode(val);
+		root.left=deserialize(nodes);
+		root.right=deserialize(nodes);
+		return root;
+		
 	}
 	private static String Serialize(TreeNode root) {
 		// TODO Auto-generated method stub
