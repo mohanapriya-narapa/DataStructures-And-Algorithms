@@ -1,4 +1,4 @@
-package Cracking_the_coding_interview_four;
+package Cracking_the_coding_interview_five;
 
 public class magicIndexWithDuplicates {
 
