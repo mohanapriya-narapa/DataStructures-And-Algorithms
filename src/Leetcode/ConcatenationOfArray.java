@@ -11,7 +11,7 @@ for(int x:res)
 	System.out.println(x);
 }
  	}
-
+//leetcode
 	private static int[] ConcatenationOfArray(int[] nums) {
 		// TODO Auto-generated method stub
 	int[] res=new int[nums.length*2];
