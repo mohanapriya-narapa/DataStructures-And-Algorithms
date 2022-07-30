@@ -16,6 +16,7 @@ for(String str:words)
 System.out.println(wordBreak("leetcode", li));
 
 }
+	//https://www.youtube.com/watch?v=iWenZCZEBIA&ab_channel=FisherCoder
 
 	private static boolean wordBreak(String str, List<String> li) {
 		// TODO Auto-generated method stub
