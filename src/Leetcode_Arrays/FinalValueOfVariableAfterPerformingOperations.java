@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode_Arrays;
 
 public class FinalValueOfVariableAfterPerformingOperations {
 
