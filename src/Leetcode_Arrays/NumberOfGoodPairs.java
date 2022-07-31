@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode_Arrays;
 
 public class NumberOfGoodPairs {
 	public static void main(String[] args) {
