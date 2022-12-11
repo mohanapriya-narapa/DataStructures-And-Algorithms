@@ -44,16 +44,18 @@ print(result);
 		while(n!=null)
 		{Node next=n.next;
 			if(n.data<x)
-		{
-			n.next=head;
-			head=n;
-		}
-		else {
-			tail.next=n;
-			tail=n;
-		}
+			{
+				n.next=head;
+				head=n;
+				
+			}
+			else
+			{
+				tail.next=n;
+				tail=n;
+			}
 			n=next;
-		}tail.next=null;
+		}
 		return head;
 	}
 
