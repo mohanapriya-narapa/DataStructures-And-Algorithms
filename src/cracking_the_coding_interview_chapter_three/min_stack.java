@@ -28,10 +28,6 @@ push(1);push(5);push(7);push(8);System.out.println(getMin());pop();
 			return st2.peek();
 		}
 	}
-//	private static void min_stack() {
-//		// TODO Auto-generated method stub
-//		
-//	}
 	private static void push(int i) {
 		// TODO Auto-generated method stub
 		st1.push(i);
